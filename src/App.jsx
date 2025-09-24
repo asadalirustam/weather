@@ -3,6 +3,7 @@ import SearchBar from "./components/SearchBar";
 import WeatherCard from "./components/WeatherCard";
 import HourlyForecast from "./components/HourlyForecast";
 import DailyForecast from "./components/DailyForecast";
+import Weather from "./components/Weather";
 
 const API_KEY = "bc60ad1d0a3db0b5e76a60221e985185";
 
@@ -43,5 +44,11 @@ function App() {
     </div>
   );
 }
-
+function App() {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <WeatherCard />
+    </div>
+  );
+}
 export default App;

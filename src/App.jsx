@@ -31,7 +31,9 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0a0e27] text-white flex flex-col items-center p-6">
       <h1 className="text-3xl font-bold mb-6">How’s the sky looking today?</h1>
-      
+       <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <WeatherCard />
+    </div>
       <SearchBar city={city} setCity={setCity} onSearch={getWeather} />
 
       {weather && <WeatherCard weather={weather} />}
@@ -44,11 +46,5 @@ function App() {
     </div>
   );
 }
-function App() {
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900">
-      <WeatherCard />
-    </div>
-  );
-}
+
 export default App;

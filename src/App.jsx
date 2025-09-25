@@ -14,12 +14,12 @@ function App() {
   const getWeather = async () => {
     try {
       const res = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${bc60ad1d0a3db0b5e76a60221e985185}&units=metric`
+        `https://openweathermap.org/faq#error401`
       );
       setWeather(res.data);
 
       const forecastRes = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${bc60ad1d0a3db0b5e76a60221e985185}&units=metric`
+        `https://openweathermap.org/faq#error401`
       );
       setForecast(forecastRes.data);
     } catch (err) {
